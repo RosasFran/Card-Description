@@ -1,0 +1,104 @@
+:root {
+    --blanco: #fff;
+    --violet: #8a2be2;
+    --oscuro: #000;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-image: url(../img/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+}
+
+/** Card **/
+.contenedor-card {
+    max-width: auto;
+    margin: 0 auto;
+    padding-top: rem;
+}
+@media (min-width: 768px) {
+    .contenedor-card {
+        padding-top: 25rem;
+        max-width: 60rem;
+    }
+}
+
+.cont-card {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    border: 4px solid black;
+}
+
+.cardcard {
+    background-color: var(--violet);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardcard p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.card-img {
+    border-radius: 10rem;
+    height: 20rem;
+    width: 20rem;
+}
+.nombre {
+    font-size: 3rem;
+    color: var(--blanco);
+}
+
+.parrafos--nombre {
+    color: var(--blanco);
+}
+
+.titlle {
+    color: var(--oscuro);
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.cont-imagenes {
+    text-align: center;
+    padding: 1.3rem;
+
+}
+
+.imagenes:hover {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+.imagenes {
+    height: 4.5rem;
+    width: 4.5rem;
+    overflow: hidden;
+    padding: .2rem;
+}
+
+.descriptions {
+    color: var(--oscuro);
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.img--padding {
+    padding: .7rem;
+}
